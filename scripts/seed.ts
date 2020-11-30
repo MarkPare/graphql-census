@@ -83,7 +83,7 @@ const createCounties = async () => {
 
 const parseDemographics = async () => {
   return new Promise((resolve, reject) => {
-    const path = './scripts/cc-est2019-alldata.csv';
+    const path = './scripts/population-records.csv';
     const parser = parse();
     const stream = fs.createReadStream(path);
 
