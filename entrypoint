@@ -1,0 +1,5 @@
+# Let mongo start up
+# TODO: fix this hack!
+sleep 10
+
+npm run prod

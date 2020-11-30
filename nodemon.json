@@ -1,0 +1,6 @@
+{
+  "watch": ["lib", "models", "routes", "scripts", "server"],
+  "ext": "ts",
+  "ignore": ["**/*.test.ts"],
+  "exec": "ts-node app.ts"
+}

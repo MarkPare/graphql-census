@@ -1,0 +1,19 @@
+version: "3.2"
+services:
+  api:
+    depends_on:
+      - mongo
+    build:
+      context: .
+    volumes:
+      - .:/app/
+    ports:
+      - "4000:4000"
+    environment:
+      MONGODB_URI: "mongodb://mongo:27017/census-dev"
+      MONGODB_URI_TEST: "mongodb://mongo:27017/census-test"
+  mongo:
+    image: mongo:latest
+    restart: always
+    volumes:
+      - /path/to/your/host/mongo/data/dir:/data/db

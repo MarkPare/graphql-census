@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2019"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "sourceMap": true,
+    "outDir": "./build",
+    "removeComments": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "typeRoots": ["./types", "node_modules/@types"],
+    "types": ["jest", "node"],
+    "esModuleInterop": true
+  },
+  "exclude": ["coverage", "build", "node_modules", "**/*.config.js"]
+}
