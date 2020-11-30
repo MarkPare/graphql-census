@@ -15,9 +15,9 @@ You will need to fetch the data and store it locally in `scripts/population-reco
 
 Ideally this data would be fetched from remote sources in the seed script. That is currently a high priority todo.
 
-The methods used for seeding can be improved significantly. There are are better sources that include all required info in a single place. However, the approach taken here is partially experimental to try out parsing of less-structured data.
+The methods used for seeding can be improved significantly. First, ideally this data would be fetched from remote sources in the seed script. Second, there are better sources that include all required info in a single place. However, the approach taken here is partially experimental to try out parsing of less-structured data.
 
-Additionally, there are some mismatches between county names between the counties data file and the population records data file, which cause certain population records to not be added during seed (these are logged to output when you run seed script). Using a better source should obviate some of these issues.
+Additionally, there are some mismatches between county names appearing in the counties data file and the population records data file, which cause certain population records to not be added during seed (these are logged to output when you run seed script). Using a better source should obviate some of these issues.
 
 Once you have completed setup instructions below, the fastest way to use it is with the Graphiql interface, which runs at `http://localhost:4000/graphql` in non-production environments.  Here is an example query to get things going:
 
